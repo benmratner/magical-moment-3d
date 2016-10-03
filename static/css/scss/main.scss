@@ -1,0 +1,56 @@
+@mixin transition($props) {
+    -webkit-transition: $props;
+    -moz-transition: $props;
+    -o-transition: $props;
+    transition: $props;
+}
+
+@mixin border-radius($props) {
+    border-radius: $props;
+    -moz-border-radius: $props;
+    -webkit-border-radius: $props;
+    -o-border-radius: $props;
+}
+
+.main-content {
+    height: 100vh;
+}
+
+.gutter-title {
+    text-align: center;
+    display: block;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    ul {
+        margin: 0;
+        padding: 5px;
+        li {
+            margin: 5px;
+            list-style: none outside none;
+            display: inline-block;
+        }
+    }
+    i {
+        width: 40px;
+        height: 40px;
+        color: white;
+        background-color: #909AA0;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 12px;
+        @include transition(all ease 0.3s);
+        @include border-radius(50%);
+        &:hover {
+            color: white;
+            text-decoration: none;
+            @include transition(all ease 0.3s);
+        }
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
