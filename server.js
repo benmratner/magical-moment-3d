@@ -36,7 +36,7 @@ var routes = function() {
 
 
 function getHome(req, res) {
-    var json = getSocialLinks();
+    // var json = getSocialLinks();
     // res.render('home', json);
     res.render('home');
 
