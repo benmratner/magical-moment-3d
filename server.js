@@ -37,7 +37,9 @@ var routes = function() {
 
 function getHome(req, res) {
     var json = getSocialLinks();
-    res.render('home', json);
+    // res.render('home', json);
+    res.render('home');
+
 }
 
 function getAbout(req, res) {
