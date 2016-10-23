@@ -1,0 +1,51 @@
+$nav-height: 200px;
+$active-border-size: 5px;
+.nav >li >a {
+    color: black;
+    padding-top: ($nav-height - 20) / 2;
+    padding-bottom: ($nav-height - 20) / 2 - $active-border-size;
+}
+
+.nav-pills {
+    &>li {
+        & > a {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $logo-beige;
+                border-bottom: solid $active-border-size black;
+            }
+        }
+        &.active > a {
+            background-color: $logo-beige;
+            border-bottom: solid $active-border-size $main-pink;
+            color: black;
+            &:hover,
+            &:active {
+                background-color: $logo-beige;
+                border-bottom: solid $active-border-size $main-pink;
+                color: black;
+            }
+        }
+    }
+}
+
+.logo-main {
+    background: {
+        image: $main-logo;
+        size: contain;
+        repeat: no-repeat;
+    }
+    height: $nav-height;
+    width: 2.15 * $nav-height;
+    padding-left: 15px;
+}
+
+.main-nav {
+    background-color: $logo-beige;
+    border: none;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}

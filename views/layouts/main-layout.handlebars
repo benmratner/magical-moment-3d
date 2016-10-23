@@ -16,17 +16,24 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="row nav-holder">
-        {{> nav}}
+    <div class="container-fluid">
+
+        <div class="col-md-10 col-md-offset-1 main-body">
+        <div class="row nav-holder">
+                    {{> nav}}
+                </div>
+            <div class="main-content panel panel-default">
+                
+                
+                <div class="body-holder">
+                    {{{body}}}
+                </div>
+            </div>
+            <div class="row gutter-holder">
+                {{> gutter}}
+            </div>
+        </div>
     </div>
-    <div class="row main-content">
-        {{{body}}}
-    </div>
-    <div class="row gutter-holder">
-        {{> gutter}}
-    </div>
-</div>
 </body>
 
 </html>

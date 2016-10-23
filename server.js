@@ -38,12 +38,23 @@ var routes = function() {
 function getHome(req, res) {
     // var json = getSocialLinks();
     // res.render('home', json);
-    res.render('home');
+    // getImagesInPath('static/img/home-carousel/').then(function(res) {
+    //     var json = {};
+
+    //     json.carImages = res;
+    //     return json;
+
+
+    // }).then(function(res) {
+    //     console.log(res);
+    res.render('home', res);
+
+    // });
 
 }
 
 function getAbout(req, res) {
-    res.render('home');
+    res.render('about');
 }
 
 function getGallery(req, res) {
@@ -71,6 +82,14 @@ function getSocialLinks() {
 
     });
     return json;
+}
 
+function getImagesInPath(path) {
+    promise = new Promise(function(res, rej) {
+        images = fs.readdir(path, function(err, items) {
+            res(items);
+        });
+    });
 
+    return promise;
 }
