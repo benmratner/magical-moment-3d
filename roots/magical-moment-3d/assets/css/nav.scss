@@ -1,4 +1,6 @@
-$nav-height: 200px;
+@import "colors.scss";
+@import "images.scss";
+$nav-height: 100px;
 $active-border-size: 5px;
 .nav >li >a {
     color: black;
@@ -12,18 +14,18 @@ $active-border-size: 5px;
             &:hover,
             &:active,
             &:focus {
-                background-color: $logo-beige;
+                background-color: $nav-bg;
                 border-bottom: solid $active-border-size black;
             }
         }
         &.active > a {
-            background-color: $logo-beige;
-            border-bottom: solid $active-border-size $main-pink;
+            background-color: $nav-bg;
+            border-bottom: solid $active-border-size $active-border;
             color: black;
             &:hover,
             &:active {
-                background-color: $logo-beige;
-                border-bottom: solid $active-border-size $main-pink;
+                background-color: $nav-bg;
+                border-bottom: solid $active-border-size $hover-border;
                 color: black;
             }
         }
@@ -35,6 +37,7 @@ $active-border-size: 5px;
         image: $main-logo;
         size: contain;
         repeat: no-repeat;
+        position: center;
     }
     height: $nav-height;
     width: 2.15 * $nav-height;
@@ -42,7 +45,7 @@ $active-border-size: 5px;
 }
 
 .main-nav {
-    background-color: $logo-beige;
+    background-color: $nav-bg;
     border: none;
 }
 

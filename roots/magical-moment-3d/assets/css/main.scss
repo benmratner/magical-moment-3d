@@ -21,7 +21,7 @@ body {
 
 .main-content {
     height: 100vh;
-    // background-color: $main-pink;
+    background-color: $body-bg;
 }
 
 .gutter-title {
@@ -76,4 +76,24 @@ body {
         color: #000;
         text-decoration: none;
     }
+}
+
+//     .carousel {
+//     height: 400px;
+// }
+.carousel-inner > .item {
+    height: 400px;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.carousel-inner .item img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
