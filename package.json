@@ -7,7 +7,7 @@
     "homepage": "",
     "scripts": {
         "start": "npm-run-all clean watch",
-        "watch": "roots watch",
+        "watch": "roots watch --port $PORT",
         "clean": "npm-run-all clean:rm clean:rebuild",
         "clean:rm": "rm -rf public",
         "clean:rebuild": "mkdir -p public/js",
