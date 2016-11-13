@@ -5,8 +5,8 @@
         "**": 3600000
     },
     "routes": {
-        "**": "index.html",
-        "About": "About/index.html"
+        "/": "index.html",
+        "/About": "About/index.html"
 
     },
     "write": {
