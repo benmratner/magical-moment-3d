@@ -36,12 +36,12 @@ module.exports =
         )
       ]
     ),
-    css_pipeline(files: 'assets/css/*.styl'),
+    css_pipeline(files: 'assets/css/*.scss'),
     dynamic()
   ]
 
-  stylus:
-    use: [axis(), rupture(), autoprefixer()]
+  sass:
+    outFile: 'assets/css/main.css'
 
   handlebars:
     helpers: loadHelpers(__dirname + '/views/_helpers')

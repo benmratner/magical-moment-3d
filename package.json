@@ -6,8 +6,10 @@
     "license": "",
     "homepage": "",
     "scripts": {
-        "start": "npm-run-all clean watch",
-        "watch": "roots watch --port $PORT",
+        "start": "npm-run-all clean watch-remote",
+        "start-local": "npm-run-all clean watch",
+        "watch-remote": "roots watch --port $PORT",
+        "watch": "roots watch",
         "clean": "npm-run-all clean:rm clean:rebuild",
         "clean:rm": "rm -rf public",
         "clean:rebuild": "mkdir -p public/js",
