@@ -1,0 +1,18 @@
+{
+    "clean_urls": true,
+    "error_page": "error.html",
+    "cache_control": {
+        "**": 3600000
+    },
+    "routes": {
+        "**": "index.html",
+        "About": "About/index.html"
+
+    },
+    "write": {
+        "content": "hello!"
+    },
+    "url": "/static",
+    "gzip": true,
+    "log": "tiny"
+}
