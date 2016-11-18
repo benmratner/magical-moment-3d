@@ -35,22 +35,23 @@
 body {
   background-color: #C6A2A9; }
 
-.main-content {
-  height: 100vh;
-  background-color: #FFFFFF; }
-
 .gutter-title {
-  text-align: center;
   display: block; }
+
+.gutter-col {
+  text-align: center; }
 
 .main-content {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  height: 80vh;
+  background-color: #FFFFFF; }
 
 .social {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   .social ul {
     margin: 0;
     padding: 5px; }
