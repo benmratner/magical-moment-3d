@@ -10,6 +10,11 @@ babelify = require 'babelify'
 loadPartials = require './views/_utils/load-partials'
 loadHelpers  = require './views/_utils/load-helpers'
 
+merge = (dest, objs...) ->
+  for obj in objs
+    dest[k] = v for k, v of obj
+  dest
+
 # Register handlebars-layouts
 layouts.register(handlebars);
 
@@ -42,6 +47,7 @@ module.exports =
 
   sass:
     outFile: 'assets/css/main.css'
+
 
   handlebars:
     helpers: loadHelpers(__dirname + '/views/_helpers')
