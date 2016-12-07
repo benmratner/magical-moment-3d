@@ -254,3 +254,7 @@ body {
 .heart-bear {
   height: 200px;
   float: right; }
+
+.attr {
+  font-size: 1rem;
+  text-align: center; }
