@@ -1,18 +1,18 @@
 .nav > li > a {
   color: black;
-  padding-top: 40px;
-  padding-bottom: 35px; }
+  padding-top: 90px;
+  padding-bottom: 85px; }
 
 .nav-pills > li > a:hover, .nav-pills > li > a:active, .nav-pills > li > a:focus {
-  background-color: #FBECE3;
+  background-color: #FBFBCD;
   border-bottom: solid 5px black; }
 
 .nav-pills > li.active > a {
-  background-color: #FBECE3;
+  background-color: #FBFBCD;
   border-bottom: solid 5px #A77881;
   color: black; }
   .nav-pills > li.active > a:hover, .nav-pills > li.active > a:active {
-    background-color: #FBECE3;
+    background-color: #FBFBCD;
     border-bottom: solid 5px #000000;
     color: black; }
 
@@ -21,13 +21,23 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 215px;
+  height: 200px;
+  width: 430px;
   padding-left: 15px; }
 
 .main-nav {
-  background-color: #FBECE3;
+  background-color: #FBFBCD;
   border: none; }
 
 .nav-tabs {
   border-bottom: none; }
+
+@media (max-width: 1120px) {
+  .logo-main {
+    height: 100px;
+    padding-left: 15px;
+    width: 215px; }
+  .nav > li > a {
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 35px; } }
